@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DNT_Insert">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Nhập thông tin vật tư"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMa"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginLeft="25dp"
+        android:gravity="center"
+        android:text="Mã vật tư: "/>
+
+    <EditText
+        android:id="@+id/edtMa"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/tvMa"/>
+
+    <TextView
+        android:id="@+id/tvTen"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@id/edtMa"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Tên máy tính: " />
+    <EditText
+        android:id="@+id/edtTen"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/edtMa"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/tvTen"/>
+    <TextView
+        android:id="@+id/tvLoai"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@id/tvTen"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Loại: "/>
+
+    <EditText
+        android:id="@+id/edtLoai"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/edtTen"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/tvLoai"/>
+
+    <TextView
+        android:id="@+id/tvNam"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@id/tvLoai"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Năm: " />
+
+    <EditText
+        android:id="@+id/edtNam"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/edtLoai"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/tvNam"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/tvHang"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@id/tvNam"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Hãng sản xuất: "/>
+
+    <EditText
+        android:id="@+id/edtHsx"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/edtNam"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@+id/tvHang" />
+    <TextView
+        android:id="@+id/tvDg"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@id/tvHang"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Đơn giá: "/>
+
+    <EditText
+        android:id="@+id/edtDg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/edtHsx"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/tvDg"/>
+    <TextView
+        android:id="@+id/tvSl"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+        android:layout_below="@id/tvDg"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Số lượng: "/>
+
+    <EditText
+        android:id="@+id/edtSl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/edtDg"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/tvSl"/>
+
+    <LinearLayout
+        android:id="@+id/listBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSl"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Thoát" />
+    </LinearLayout>
+
+</RelativeLayout>
